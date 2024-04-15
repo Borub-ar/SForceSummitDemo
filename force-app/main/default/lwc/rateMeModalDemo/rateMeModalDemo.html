@@ -1,0 +1,23 @@
+<template>
+    <div class="modal_layer">
+        <div
+                class="modal"
+                role="dialog"
+                aria-labelledby="modal_title"
+                aria-describedby="modal_description"
+                aria-modal="true">
+
+            <h2 id="modal_title" class="modal_title">OCEŃ NAS</h2>
+            <p id="modal_description" class="modal_description">Co myślisz o prezentacji?</p>
+            <button onclick={closeModal} onkeydown={handleTabNaviagtionBack} class="modal_close first-element"
+                    aria-label="Close modal">X
+            </button>
+
+            <div>
+                <c-rate-me-rating-demo class=""></c-rate-me-rating-demo>
+            </div>
+
+            <button onkeydown={handleTabNavigation} class="last-element">Zapisz</button>
+        </div>
+    </div>
+</template>
