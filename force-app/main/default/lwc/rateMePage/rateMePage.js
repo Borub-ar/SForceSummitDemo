@@ -12,12 +12,7 @@ export default class RateMePage extends LightningElement {
         return `background-image: url(${this.background})`;
     }
 
-
-
-    
-
     handleModalVisibility() {
-        console.log('aaaaaa');
         this.showModal = !this.showModal;
     }
 }

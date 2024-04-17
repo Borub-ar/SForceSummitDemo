@@ -1,9 +1,13 @@
+*:focus-visible {
+    outline: 3px solid red;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     background: #3A913F url('./background-color.jpg') no-repeat left / cover;
     clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 65%, 68% 78%, 47% 100%, 12% 100%, 0 100%, 0% 35%, 0 0);
 }
