@@ -44,6 +44,9 @@
     border: none;
     border-radius: 0 10px 0 10px;
     cursor: pointer;
+    background-color: #147700;
+    color: #fff;
+    font-weight: 900;
 }
 
 .save-btn {

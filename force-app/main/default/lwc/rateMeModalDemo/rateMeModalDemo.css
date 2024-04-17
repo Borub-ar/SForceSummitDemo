@@ -1,3 +1,7 @@
+*:focus-visible {
+    outline: 3px solid red;
+}
+
 .modal_layer {
     position: fixed;
     inset: 0;
@@ -10,6 +14,8 @@
 
 .modal {
     position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 400px;
     aspect-ratio: 2 / 1;
     background-color: #fff;
@@ -38,4 +44,21 @@
     border: none;
     border-radius: 0 10px 0 10px;
     cursor: pointer;
+    background-color: #147700;
+    color: #fff;
+    font-weight: 900;
+}
+
+.save-btn {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    width: 200px;
+    align-self: center;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #147700;
+    color: #fff;
 }

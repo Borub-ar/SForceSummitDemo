@@ -100,7 +100,7 @@
 }
 
 .option-input:focus-within + .styled-input {
-    outline: 2px solid #ffbf00;
+    outline: 3px solid red;
 }
 
 .option-input:checked + .styled-input::before, .option-input:checked + .styled-input::after , .styled-input[data-type-answer="true"]::before, .styled-input[data-type-answer="true"]::after, .styled-input[data-type-answer="false"]::before, .styled-input[data-type-answer="false"]::after {
