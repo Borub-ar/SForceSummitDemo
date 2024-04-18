@@ -2,7 +2,7 @@
     outline: 3px solid red;
 }
 
-.modal_layer {
+.modal_backdrop {
     position: fixed;
     inset: 0;
     z-index: 5;
@@ -35,7 +35,7 @@
     margin-bottom: 1rem;
 }
 
-.modal_close {
+.modal_close-btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -49,7 +49,7 @@
     font-weight: 900;
 }
 
-.save-btn {
+.modal_save-btn {
     padding: 0.5rem 2rem;
     font-size: 1.4rem;
     margin-top: 2rem;

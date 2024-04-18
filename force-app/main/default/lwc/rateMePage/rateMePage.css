@@ -18,7 +18,7 @@ h1 {
     font-weight: 900;
 }
 
-h2 {
+.description {
     font-size: clamp(2rem, 2vw, 5rem);
     font-weight: 600;
     margin-bottom: 100px;
