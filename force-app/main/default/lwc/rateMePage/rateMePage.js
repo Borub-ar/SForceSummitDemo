@@ -6,13 +6,7 @@ export default class RateMePage extends LightningElement {
     background = BACKGROUND;
     craftwareLogo = LOGO
 
-    showModal = false;
-
     get backgroundStyle() {
         return `background-image: url(${this.background})`;
-    }
-
-    handleModalVisibility() {
-        this.showModal = !this.showModal;
     }
 }
