@@ -2,11 +2,12 @@
     <main>
         <div class="wrapper" style={backgroundStyle}>
             <h1>Otwarte dla Wszystkich:</h1>
-            <h2>Klucz do Web Accessibility w LWC</h2>
-            <button onclick={handleModalVisibility} aria-label="Open rate us modal">OCEŃ NAS</button>
-        </div>
-        <img src={craftwareLogo} alt="Craftware logo">
+            <p class="description">Klucz do Web Accessibility w LWC</p>
+            <button onclick={handleMoodalVisibility}>OCEŃ NAS</button>
 
-        <c-rate-me-modal-demo lwc:if={showModal} onclose={handleModalVisibility}></c-rate-me-modal-demo>
+            <c-rate-me-modal lwc:if={showModal} onclose={handleMoodalVisibility}></c-rate-me-modal>
+        </div>
+
+        <img src={craftwareLogo} alt="Logo Craftware">
     </main>
 </template>

@@ -1,12 +1,12 @@
 <template>
     <div class="modal_backdrop">
         <div
-                class="modal"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="title"
-                aria-describedby="description"
-                >
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="title"
+          aria-describedby="description"
+        >
 
             <h2 id="title" class="modal_title">OCEŃ NAS</h2>
             <p id="description" class="modal_description">Co myślisz o prezentacji?</p>
@@ -15,7 +15,7 @@
             </button>
 
             <div>
-                <c-rate-me-rating class=""></c-rate-me-rating>
+                <c-rate-me-rating class="focus-element"></c-rate-me-rating>
             </div>
 
             <button onkeydown={handleTabNavigation} class="modal_save-btn last-element">Zapisz</button>

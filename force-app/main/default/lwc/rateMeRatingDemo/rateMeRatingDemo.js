@@ -1,6 +1,6 @@
 import {track, LightningElement} from 'lwc';
 
-export default class RateMeRatingDemo extends LightningElement {
+export default class RateMeRating extends LightningElement {
 
     static delegatesFocus = true;
 

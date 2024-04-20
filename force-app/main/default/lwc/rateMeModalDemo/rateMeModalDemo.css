@@ -1,6 +1,9 @@
 *:focus-visible {
     outline: 3px solid red;
 }
+*:focus {
+    outline: 3px solid red;
+}
 
 .modal_backdrop {
     position: fixed;

@@ -1,33 +1,33 @@
 import { LightningElement } from 'lwc';
 
-export default class RateMeModalDemo extends LightningElement {
-    isRendered = false;
+export default class RateMeModal extends LightningElement {
+    isRendered = false
 
     connectedCallback() {
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape') {
-            this.closeModal();
+                this.closeModal()
             }
-        });
+        })
 
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'hiddden'
+    }
+
+    disconnectedCallback() {
+        document.removeEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                this.closeModal()
+            }
+        })
+
+        document.body.style.overflow = 'auto'
     }
 
     renderedCallback() {
         if (this.isRendered) return;
         this.isRendered = true;
 
-        this.template.querySelector('.first-element').focus();
-    }
-
-    disconnectedCallback() {
-        document.removeEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-            this.closeModal();
-            }
-        });
-
-        document.body.style.overflow = 'auto';
+        this.template.querySelector('.focus-element').focus();
     }
 
     closeModal() {
@@ -37,14 +37,14 @@ export default class RateMeModalDemo extends LightningElement {
     handleTabNavigation(event) {
         if (event.keyCode === 9 && !event.shiftKey) {
             event.preventDefault();
-            this.template.querySelector('.modal_close').focus();
+            this.template.querySelector('.first-element').focus();
         }
     }
 
-    handleTabNaviagtionBack(event)  {
+    handleTabNavigationBack(event) {
         if (event.keyCode === 9 && event.shiftKey) {
-            event.preventDefault();
-            this.template.querySelector('.last-element').focus();
+            event.preventDefault()
+            this.template.querySelector('.last-element').focus()
         }
     }
 }
