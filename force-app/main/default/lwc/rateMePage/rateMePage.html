@@ -1,13 +1,13 @@
 <template>
-    <main>
-        <div class="wrapper" style={backgroundStyle}>
-            <h1>Otwarte dla Wszystkich:</h1>
-            <p class="description">Klucz do Web Accessibility w LWC</p>
-            <button onclick={handleMoodalVisibility}>OCEŃ NAS</button>
+  <main>
+    <div class="wrapper" style={backgroundStyle}>
+      <h1>Otwarte dla Wszystkich:</h1>
+      <p class="description">Klucz do Web Accessibility w LWC</p>
+      <button onclick={handleMoodalVisibility}>OCEŃ NAS</button>
 
-            <c-rate-me-modal lwc:if={showModal} onclose={handleMoodalVisibility}></c-rate-me-modal>
-        </div>
+      <c-rate-me-modal lwc:if={showModal} onclose={handleMoodalVisibility}></c-rate-me-modal>
+    </div>
 
-        <img src={craftwareLogo} alt="Logo Craftware">
-    </main>
+    <img src={craftwareLogo} alt="Logo Craftware" />
+  </main>
 </template>

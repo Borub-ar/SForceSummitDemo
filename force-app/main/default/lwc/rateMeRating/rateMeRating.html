@@ -1,29 +1,28 @@
 <!-- Rate Me Rating -->
 <template>
+  <div class="container">
+    <fieldset>
+      <legend class="title">
+        <span class="required">*</span>
+        Ocena:
+      </legend>
 
-    <div class="container">
-        <fieldset>
-            <legend class="title">
-                <span class="required">*</span>
-                Ocena:
-            </legend>
-
-            <div class="rating-wrapper" data-columns={columns}>
-                <template for:each={options} for:item="option">
-                    <label class="option" for={option.value} key={option.value}>
-                        <input type="checkbox"
-                               id={option.value}
-                               class="option-input"
-                               value={option.value}
-                               checked={option.checked}
-                               onchange={handleValueChange} />
-                        <span class="styled-input"></span>
-                        <span class="styled-label">{option.label}</span>
-                    </label>
-                </template>
-            </div>
-        </fieldset>
-    </div>
-
-
+      <div class="rating-wrapper" data-columns={columns}>
+        <template for:each={options} for:item="option">
+          <label class="option" for={option.value} key={option.value}>
+            <input
+              type="checkbox"
+              id={option.value}
+              class="option-input"
+              value={option.value}
+              checked={option.checked}
+              onchange={handleValueChange}
+            />
+            <span class="styled-input"></span>
+            <span class="styled-label">{option.label}</span>
+          </label>
+        </template>
+      </div>
+    </fieldset>
+  </div>
 </template>

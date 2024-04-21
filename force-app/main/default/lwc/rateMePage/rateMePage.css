@@ -1,50 +1,55 @@
 *:focus-visible {
-    outline: 3px solid red;
+  outline: 3px solid red;
 }
 
 *:focus {
-    outline: 3px solid red;
+  outline: 3px solid red;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    min-height: calc(100vh - 80px);
-    background: #3A913F url('./background-color.jpg') no-repeat left / cover;
-    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 65%, 68% 78%, 47% 100%, 12% 100%, 0 100%, 0% 35%, 0 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  background: #3a913f url('./background-color.jpg') no-repeat left / cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 65%, 68% 78%, 47% 100%, 12% 100%, 0 100%, 0% 35%, 0 0);
 }
 
 h1 {
-    color: #fff;
-    font-size: clamp(2.5rem, 5vw, 6rem);
-    font-weight: 900;
+  color: #fff;
+  font-size: clamp(2.5rem, 5vw, 6rem);
+  font-weight: 900;
 }
 
 .description {
-    font-size: clamp(2rem, 2vw, 5rem);
-    font-weight: 600;
-    margin-bottom: 100px;
+  font-size: clamp(2rem, 2vw, 5rem);
+  font-weight: 600;
+  margin-bottom: 100px;
 }
 
 img {
-    position: absolute;
-    bottom: -250px;
-    right: -530px;
-    scale: 0.2;
+  position: absolute;
+  bottom: -250px;
+  right: -530px;
+  scale: 0.2;
 }
 
 button {
-    width: fit-content;
-    padding: 9px 30px;
-    border-radius: 5px;
-    border: 1px solid #147700;
-    margin-inline: auto;
-    align-self: self-start;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #3A913F;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: fit-content;
+  padding: 9px 30px;
+  border-radius: 5px;
+  border: 1px solid #147700;
+  margin-inline: auto;
+  align-self: self-start;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3a913f;
+  background-color: #fff;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
