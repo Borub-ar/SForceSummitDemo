@@ -34,14 +34,14 @@ export default class RateMeModal extends LightningElement {
     this.dispatchEvent(new CustomEvent('close'));
   }
 
-  handleTabNavigation(event) {
+  handleTabLoop(event) {
     if (event.keyCode === 9 && !event.shiftKey) {
       event.preventDefault();
       this.template.querySelector('.first-element').focus();
     }
   }
 
-  handleTabNavigationBack(event) {
+  handleTabLoopBackwards(event) {
     if (event.keyCode === 9 && event.shiftKey) {
       event.preventDefault();
       this.template.querySelector('.last-element').focus();
