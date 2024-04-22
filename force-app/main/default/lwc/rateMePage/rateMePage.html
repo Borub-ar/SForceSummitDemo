@@ -3,10 +3,10 @@
     <div class="wrapper" style={backgroundStyle}>
       <h1>Otwarte dla Wszystkich:</h1>
       <p class="description">Klucz do Web Accessibility w LWC</p>
-      <button onclick={handleMoodalVisibility}>OCEŃ NAS</button>
-
-      <c-rate-me-modal lwc:if={showModal} onclose={handleModalVisibility}></c-rate-me-modal>
+      <button onclick={handleModalVisibility}>OCEŃ NAS</button>
     </div>
+
+    <c-rate-me-modal lwc:if={showModal} onclose={handleModalVisibility}></c-rate-me-modal>
 
     <img src={craftwareLogo} alt="Logo Craftware" />
   </main>
