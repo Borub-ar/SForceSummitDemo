@@ -3,12 +3,17 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="title" aria-describedby="description">
       <h2 id="title" class="modal_title">OCEŃ NAS</h2>
       <p id="description" class="modal_description">Co myślisz o prezentacji?</p>
-      <button onclick={closeModal} onkeydown={handleTabLoopBackwards} class="modal_close-btn first-element" aria-label="Zamknij okno dialogowe">
+      <button
+        onclick={closeModal}
+        onkeydown={handleTabLoopBackwards}
+        class="modal_close-btn first-element focus-element"
+        aria-label="Zamknij okno dialogowe"
+      >
         X
       </button>
 
       <div>
-        <c-rate-me-rating class="focus-element"></c-rate-me-rating>
+        <c-rate-me-rating-demo class="focus-element"></c-rate-me-rating-demo>
       </div>
 
       <button onkeydown={handleTabLoop} class="modal_save-btn last-element">Zapisz</button>
